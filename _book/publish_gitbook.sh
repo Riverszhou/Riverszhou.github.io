@@ -1,27 +1,27 @@
-＃安装插件并构建静态站点
+# install the plugins and build the static site
 gitbook install && gitbook build
 
-＃结账的GH-页面分支
+# checkout to the master branch
 git checkout master
 
-＃拉最新的更新
+# pull the latest updates
 git pull origin master --rebase
 
-＃将静态站点文件复制到当前目录中。
-cp -R _book / *  。
+# copy the static site files into the current directory.
+cp -R _book/* .
 
-# remove'node_modules'和'_ book'目录
+# remove 'node_modules' and '_book' directory
 git clean -fx node_modules
 git clean -fx _book
 
-＃添加的所有文件
-git add 。
+# add all files
+git add .
 
-＃提交
-git commit -a -m “更新文档”
+# commit
+git commit -a -m "Update docs"
 
-＃推送到原点
+# push to the origin
 git push origin master
 
-＃结账到主分支
+# checkout to the master branch
 git checkout gh-pages
