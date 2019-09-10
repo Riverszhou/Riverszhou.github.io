@@ -1,4 +1,3 @@
-
 ＃安装插件并构建静态站点
 gitbook install && gitbook build
 
