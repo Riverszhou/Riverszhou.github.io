@@ -1,3 +1,0 @@
-# NNNNNN
-
-> An awesome project.
